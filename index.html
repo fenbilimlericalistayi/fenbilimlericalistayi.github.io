@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" >
+        <title>Ana Sayfa - FBÇ</title>
+        <link rel="stylesheet" type="text/css" href="assets/about.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" href="assets/resources/siteicon.png">
+    </head>
+    <body>
+        <section class="header">
+              <nav>
+             <a href="index.html"><img src="assets/resources/varanklogo.png"> </a> 
+                <div class="nav-links" id="navlinks">
+
+                    <i class="fa fa-times-circle" aria-hidden="true" onclick="hideBar()"> </i>         
+                    <ul>
+                        <li>
+                            <li><a href="applynew.html">BAŞVURULAR</a></li>
+                            <li><a href="committees.html">KOMİTELER</a></li>
+                            <li><a href="venue.html">İLETİŞİM/ULAŞIM</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" onclick="openBar()"></i>
+              </nav>
+              <div class="text-box">
+                <img id="images" src="assets/resources/varanklogo.png"> 
+                <h1>Şehit İlhan Varank Fen Lisesi</h1>
+                <h1>Fen Bilimleri Çalıştayı</h1>
+                
+                    <button type="button" onclick="redirectAbout()" ><span></span>ŞİMDİ BAŞVURUN</button>
+                </div>
+        </section>
+       
+
+      
+
+
+        <!---sections-->
+        <section class="course">
+            <h4>DEĞERLERİMİZ</h4>
+            <div class="row">
+                
+                <div class="course-color">
+                    <h1>Misyonumuz</h1>
+                    
+                    <h3>
+                        Hayallerinin peşinden gitmek isteyen her
+                        öğrenciyi; konusunda uzmanlaşmış kişiler ve
+                        idealleri olan gençler ile bir araya getirerek
+                        çeşitli atölye çalışmalarıyla yeteneklerini
+                        pekiştiriyor ve tecrübe kazandırıyor, tartışma ve
+                        yorumlama becerilerini geliştirerek
+                        ilgilendikleri fen bilimleri alanında kendilerini
+                        keşfetme imkanı sunuyoruz.
+                         <br>
+                        </h3>
+                </div>
+                            <div class="course-color">
+                    <h1>Vizyonumuz</h1>
+                    
+                    <h3>
+                        Lise dönemindeki gençlerimizi fen bilimleri
+                        alanlarında uzmanlaşmış kişilerle buluşturup
+                        çeşitli projelerle kendilerini geliştirmelerini
+                        sağlayarak toplumumuza iletişim, problem
+                        çözme, yenilikçi düşünme becerisi yüksek
+                        idealist bireyler kazandırmak vizyonumuzdur.
+                         <br>
+                        </h3>
+                </div>
+    
+      
+            </div>
+        </section>
+       
+
+        <script>
+          
+
+            var navLinks = document.getElementById("navlinks");
+            function openBar()
+            {
+                navLinks.style.display = "block";
+                navLinks.style.right = "0";
+          
+
+            }
+            function hideBar()
+            {
+                navLinks.style.right = "-200px"
+                navLinks.style.display = "none";
+            }
+            function redirectAbout()
+            {
+                window.location.href = "applynew.html";
+            }
+            function redirectAbout2()
+            {
+                window.location.href = "https://alduck.xyz";
+            }
+            function copyFunction() {
+         
+             var copyText = document.getElementById("Input");
+
+           
+             copyText.select();
+             copyText.setSelectionRange(0, 99999); 
+
+            
+             navigator.clipboard.writeText(copyText.value);
+
+             
+            alert("Panoya kopyalandı: " + copyText.value);
+} 
+        </script>
+
+                            <footer>
+    <p class="copyright" onclick="redirectAbout2()">&copy Ali Çavdar 2025</p>
+  </footer>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" >
+        <title>Kanser ve Genetik Komitesi - FBÇ</title>
+        <link rel="stylesheet" type="text/css" href="assets/cards.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" href="assets/resources/siteicon.png">
+    </head>
+    <body>
+        <section class="header">
+              <nav>
+             <a href="index.html"><img src="assets/resources/varanklogo.png"> </a> 
+                <div class="nav-links" id="navlinks">
+
+                    <i class="fa fa-times-circle" aria-hidden="true" onclick="hideBar()"> </i>         
+                    <ul>
+                        <li>
+                            <li><a href="index.html">FBÇ</a></li>
+                            <li><a href="committees.html">KOMİTELER</a></li>
+                            <li><a href="venue.html">İLETİŞİM</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" onclick="openBar()"></i>
+              </nav>
+              <div class="container5">
+                <h1>Kanser ve Genetik Komitesi</h1>
+              </div>
+              <div class="row">
+               
+                    <div class="container09">
+                        <h1>Komite Hakkında</h1>
+                        <h3 class="intro">
+                            Kanser, hücrelerin kontrolsüz bir şekilde büyüyüp
+                            çoğalması sonucu oluşan ve genetik faktörlerin önemli
+                            bir rol oynadığı bir hastalıktır. Genetik mutasyonlar,
+                            kanser gelişiminde etkili faktörler arasında yer alır ve
+                            bazı kanser türleri kalıtsal olarak geçebilir. <br> <br>
+                            Son yıllarda, kanser tedavisinde genetik haritalama ve
+                            kişiye özel tedavi yöntemleri ön plana çıkmıştır.
+                            Kanser hücresinin genetik yapısının incelenmesi,
+                            tedaviye yönelik daha etkili ve hedefe yönelik
+                            yaklaşımların geliştirilmesine olanak tanımaktadır. <br> <br>
+                            Genetik testler, bireylerin kanser risklerini belirlemek
+                            ve tedavi süreçlerini kişiselleştirmek için
+                            kullanılmaktadır. Bu testler, kanserin genetik
+                            temellerini anlamak ve tedaviye yönelik stratejiler
+                            geliştirmek açısından büyük önem taşır. <br> <br>
+                            Sizler de bizim gibi kanser ve genetik biliminin sır
+                            dolu dünyalarını merak ediyorsanız keşfetmeye
+                            beraber başlayalım. Aklımızdaki soruların cevabını bu
+                            2 günlük keşfimizde tamamlamak için sizleri Kanser-
+                            Genetik Komitemize bekleriz.
+
+ 
+                        </p>
+                         
+                    </div>
+            
+               
+                 
+                    </div>
+                    
+      
+            </div>
+        </section>
+
+
+        
+        </section>
+       
+
+        <script>
+          
+
+            var navLinks = document.getElementById("navlinks");
+            function openBar()
+            {
+                navLinks.style.display = "block";
+                navLinks.style.right = "0";
+          
+
+            }
+            function redirectToPDF() {
+            window.location.href = '/assets/guides/UNSC.pdf';
+}
+            function hideBar()
+            {
+                navLinks.style.right = "-200px"
+                navLinks.style.display = "none";
+            }
+            function redirectAbout()
+            {
+                window.location.href = "https://www.instagram.com/varankgofficial/?hl=en";
+            }
+            function copyFunction() {
+         
+             var copyText = document.getElementById("Input");
+
+           
+             copyText.select();
+             copyText.setSelectionRange(0, 99999); 
+
+            
+             navigator.clipboard.writeText(copyText.value);
+
+             
+            alert("Panoya kopyalandı: " + copyText.value);
+} 
+        </script>
+    </body>
+</html>

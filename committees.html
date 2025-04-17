@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" >
+        <title>KOMİTELER - FBÇ</title>
+        <link rel="stylesheet" type="text/css" href="assets/committees.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" href="assets/resources/siteicon.png">
+    </head>
+    <body>
+        <section class="header">
+              <nav>
+             <a href="index.html"><img src="assets/resources/varanklogo.png"> </a> 
+                <div class="nav-links" id="navlinks">
+
+                    <i class="fa fa-times-circle" aria-hidden="true" onclick="hideBar()"> </i>         
+                    <ul>
+                        <li>
+                          <li><a href="index.html">FBÇ</a></li>
+                          <li><a href="applynew.html">BAŞVURULAR</a></li>
+                          <li><a href="venue.html">İLETİŞİM/ULAŞIM</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" onclick="openBar()"></i>
+              </nav>
+              <div class="head">
+                <h1>KOMİTELER</h1>
+              </div>
+
+              <div class="card-container">
+                <div class="article-card">
+                    <div class="content">
+                      <p class="date">Nöroloji Komitesi</p>
+                      <p class="title">Beyninizi keşfetmeye hazır mısınız?</p>
+                      <button2 class="learn-more" onclick="redirectDISEC()">Detaylar</button2>
+                    </div>
+                    <img src="assets/resources/DISEC.jpg" alt="article-cover" />
+                  </div>
+                  <div class="article-card">
+                    <div class="content">
+                      <p class="date">Nükleer Fizik Komitesi</p>
+                      <p class="title">Nükleer enerji geleceğimiz mi yoksa sonumuz mu?</p>
+                      <button2 class="learn-more" onclick="redirectUNSC()">Detaylar</button2>
+                    </div>
+                    <img src="assets/resources/UNSC.jpg" alt="article-cover" />
+                  </div>
+                  <div class="article-card">
+                    <div class="content">
+                      <p class="date">Havacılık ve Uzay Bilimleri Komitesi</p>
+                      <p class="title">Atatürk'ün bu denli önem verdiği gökleri ne kadar
+                        tanıyoruz?</p>
+                      <button2 class="learn-more" onclick="redirectECOFIN()">Detaylar</button2>
+                    </div>
+                    <img src="assets/resources/ECOFIN.jpg" alt="article-cover" />
+                  </div>
+                  <div class="article-card">
+                    <div class="content">
+                      <p class="date">Psikoloji-Psikiyatri Komitesi</p>
+                      <p class="title">Mental sağlık problemlerinin gitgide ön plana çıktığı
+                        bir çağdayız. Bunun sebepleri neler olabilir? </p>
+                      <button2 class="learn-more" onclick="redirectUNODC()">Detaylar</button2>
+                    </div>
+                    <img src="assets/resources/UNODC.jpg" alt="article-cover" />
+                  </div>
+                  <div class="article-card">
+                    <div class="content">
+                      <p class="date">Nanoteknoloji Komitesi</p>
+                      <p class="title">Nanoteknoloji, çevremizi değiştirme gücüne sahip. Peki, bu geleceği
+                        nasıl şekillendirebiliriz?</p>
+                      <button2 class="learn-more" onclick="redirectEUC()">Detaylar</button2>
+                    </div>
+                    <img src="assets/resources/EU.jpg" alt="article-cover" />
+                  </div>
+                  <div class="article-card">
+                    <div class="content">
+                      <p class="date">Adli Bilimler ve Kriminoloji Komitesi</p>
+                      <p class="title">Suçun perde arkasını merak ediyor musunuz?</p>
+                      <button2 class="learn-more"onclick="redirectHJCC()">Detaylar</button2>
+                    </div>
+                    <img src="assets/resources/HJCC.jpg" alt="article-cover" />
+                  </div>
+                  <div class="article-card">
+                    <div class="content">
+                      <p class="date">Kanser ve Genetik Komitesi</p>
+                      <p class="title">Kanser, hücrelerin kontrolsüz bir şekilde büyüyüp
+                        çoğalması sonucu oluşan bir hastalıktır.</p>
+                      <button2 class="learn-more"onclick="redirectHCC()">Detaylar</button2>
+                    </div>
+                    <img src="assets/resources/black.jpg" alt="article-cover" />
+                  </div>
+                </div>
+    
+        </section>
+
+
+        <!---sections-->
+        
+
+        <script>
+          
+
+            var navLinks = document.getElementById("navlinks");
+            function openBar()
+            {
+                navLinks.style.display = "block";
+                navLinks.style.right = "0";
+          
+
+            }
+            
+            function hideBar()
+            {
+                navLinks.style.right = "-200px"
+                navLinks.style.display = "none";
+            }
+            function redirectAbout()
+            {
+                window.location.href = "https://www.instagram.com/varankgofficial/?hl=en";
+            }
+            function redirectDISEC(){
+              window.location.href ="noroloji.html";
+            }
+            function redirectECOFIN(){
+              window.location.href ="havacilik.html";
+            }
+            function redirectEUC(){
+              window.location.href ="nanomachinesson.html";
+            }
+            function redirectHCC(){
+              window.location.href ="genetik.html";
+            }
+            function redirectHJCC(){
+              window.location.href ="adlibilimler.html";
+            }
+            function redirectUNODC(){
+              window.location.href ="psikoloji.html";
+            }
+            function redirectUNSC(){
+              window.location.href ="nukleer.html";
+            }
+            function copyFunction() {
+         
+             var copyText = document.getElementById("Input");
+
+           
+             copyText.select();
+             copyText.setSelectionRange(0, 99999); 
+
+            
+             navigator.clipboard.writeText(copyText.value);
+
+             
+            alert("Panoya kopyalandı: " + copyText.value);
+} 
+        </script>
+    </body>
+</html>

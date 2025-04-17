@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" >
+        <title>İletişim/Ulaşım - FBÇ</title>
+        <link rel="stylesheet" type="text/css" href="assets/venue.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" href="assets/resources/siteicon.png">
+    </head>
+    <body>
+        <section class="header">
+              <nav>
+             <a href="index.html"><img src="assets/resources/varanklogo.png"> </a> 
+                <div class="nav-links" id="navlinks">
+
+                    <i class="fa fa-times-circle" aria-hidden="true" onclick="hideBar()"> </i>         
+                    <ul>
+                        <li>
+                            <li><a href="index.html">FBÇ</a></li>
+                            <li><a href="applynew.html">BAŞVURULAR</a></li>
+                            <li><a href="committees.html">KOMİTELER</a></li>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" onclick="openBar()"></i>
+              </nav>
+              <div class="container5">
+                <h1>Bize Ulaşın</h1>
+              </div>
+              <div class="row">
+                <div class="course-color">
+                  
+                    <h1>Adres</h1>
+                    <h3>Aydınevler, Saygı Cd. No:28, 34854 Maltepe/İstanbul</h3>
+                    <h1>E-Posta</h1>
+                    <h3>fenbilimlericalistayi25@gmail.com</h3>
+                   
+                        <div class="container3">
+                        <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48189.92599948975!2d29.079721969531246!3d40.98431917682421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac6880b8786f5%3A0x1da8998bd491da0b!2s%C5%9Eehit%20%C4%B0lhan%20Varank%20High%20School%20of%20Science!5e0!3m2!1sen!2str!4v1744917807711!5m2!1sen!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        
+                    </div>
+                    </div>
+    
+      
+            </div>
+        </section>
+
+
+        
+        </section>
+       
+
+        <script>
+          
+
+            var navLinks = document.getElementById("navlinks");
+            function openBar()
+            {
+                navLinks.style.display = "block";
+                navLinks.style.right = "0";
+          
+
+            }
+            function hideBar()
+            {
+                navLinks.style.right = "-200px"
+                navLinks.style.display = "none";
+            }
+            function redirectAbout()
+            {
+                window.location.href = "https://www.instagram.com/varankgofficial/?hl=en";
+            }
+            function copyFunction() {
+         
+             var copyText = document.getElementById("Input");
+
+           
+             copyText.select();
+             copyText.setSelectionRange(0, 99999); 
+
+            
+             navigator.clipboard.writeText(copyText.value);
+
+             
+            alert("Panoya kopyalandı: " + copyText.value);
+} 
+        </script>
+    </body>
+</html>
