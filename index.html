@@ -25,20 +25,46 @@
                 </div>
                 <i class="fa fa-bars" aria-hidden="true" onclick="openBar()"></i>
               </nav>
-              <div class="text-box">
+              <div class="containertext11">
                 <img id="images" src="assets/resources/varanklogo.png"> 
-                <h1>Şehit İlhan Varank Fen Lisesi</h1>
-                <h1>Fen Bilimleri Çalıştayı</h1>
-                
-                    <button type="button" onclick="redirectAbout()" ><span></span>ŞİMDİ BAŞVURUN</button>
+                <h1 class="header-text">ŞEHİT İLHAN VARANK FEN LİSESİ</h1>
+                <h1 class="header-text">FEN BİLİMLERİ ÇALIŞTAYI</h1>
+                <h5>3-4 Mayıs 2025</h5>
+              </div>
+              <div class="container11">
+                <div class="counter-container">
+                  <span2 id="days" class="counter">0</span2>
+                  <span2>GÜN</span2>
                 </div>
+                <div class="counter-container">
+                  <span2 id="hours" class="counter">0</span2>
+                  <span2>SAAT</span2>
+                </div>
+                <div class="counter-container">
+                  <span2 id="minutes" class="counter">0</span2>
+                  <span2>DAKİKA</span2>
+                </div>
+                <div class="counter-container">
+                  <span2 id="seconds" class="counter">0</span2>
+                  <span2>SANİYE</span2>
+                </div>
+               
+              </div>
+              <div class="containertext11">
+                <h1 class="header-text">FBÇ'YE KALAN SÜRE</h1>
+              </div>
+              
+       
+        
+    
+  
+  
+             </div> 
         </section>
        
 
       
 
-
-        <!---sections-->
         <section class="course">
             <h4>DEĞERLERİMİZ</h4>
             <div class="row">
@@ -81,6 +107,38 @@
           
 
             var navLinks = document.getElementById("navlinks");
+            document.addEventListener("DOMContentLoaded", function() {
+    const countDownDate = new Date("May 3, 2025 10:00:00").getTime();
+    const daysElement = document.getElementById("days");
+    const hoursElement = document.getElementById("hours");
+    const minutesElement = document.getElementById("minutes");
+    const secondsElement = document.getElementById("seconds");
+  
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const duration = countDownDate - now;
+  
+      if (duration < 0) {
+        clearInterval(interval);
+        updateDuration(0);
+        return;
+      }
+  
+      updateDuration(duration);
+    }, 1000);
+  
+    function updateDuration(duration) {
+      const days = Math.floor(duration / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((duration % (1000 * 60)) / 1000);
+  
+      daysElement.innerHTML = days;
+      hoursElement.innerHTML = hours;
+      minutesElement.innerHTML = minutes;
+      secondsElement.innerHTML = seconds;
+    }
+  });
             function openBar()
             {
                 navLinks.style.display = "block";
@@ -118,7 +176,7 @@
         </script>
 
                             <footer>
-    <p class="copyright" onclick="redirectAbout2()">&copy Ali Çavdar 2025</p>
+                                <p class="copyright" onclick="redirectAbout2()">&copy Ali Çavdar 2025</p>
   </footer>
     </body>
 </html>
